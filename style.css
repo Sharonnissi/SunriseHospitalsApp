@@ -1,0 +1,54 @@
+/* Base Reset */
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+body { background: linear-gradient(to right, #00c6ff, #0072ff); color:#333; scroll-behavior: smooth; }
+
+/* Navigation */
+nav { display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.9); padding:10px 50px; position:sticky; top:0; z-index:100; }
+nav .logo { font-size:24px; font-weight:bold; color:#0072ff; }
+nav ul { display:flex; list-style:none; }
+nav ul li { margin-left:20px; }
+nav ul li a { text-decoration:none; color:#0072ff; font-weight:bold; }
+nav ul li a:hover { color:#00c6ff; }
+
+/* Hero */
+.hero { display:flex; justify-content:center; align-items:center; padding:50px; flex-wrap:wrap; }
+.hero-text { flex:1; min-width:300px; margin-right:20px; }
+.hero-text h1 { font-size:48px; color:white; }
+.hero-text p { font-size:18px; margin:10px 0 20px; color:white; }
+.btn { background-color:#0072ff; color:white; padding:12px 25px; border:none; border-radius:5px; cursor:pointer; text-decoration:none; }
+.btn:hover { background-color:#00c6ff; }
+.hero-image img { max-width:400px; border-radius:10px; }
+
+/* Services */
+.services-section { background:#f0f8ff; padding:50px; text-align:center; }
+.services-section h2 { font-size:32px; margin-bottom:30px; }
+.services-container { display:flex; flex-wrap:wrap; justify-content:center; }
+.service-card { background:white; margin:10px; border-radius:10px; width:250px; padding:15px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+.service-card img { width:100%; border-radius:10px; }
+.service-card h3 { margin:15px 0 10px; }
+.service-card p { font-size:14px; color:#555; }
+
+/* Booking */
+.booking-section { background:#e6f0ff; padding:50px; text-align:center; }
+.booking-section form { max-width:500px; margin:auto; display:flex; flex-direction:column; }
+.booking-section input, .booking-section select { padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc; }
+
+/* About */
+.about-section { padding:50px; text-align:center; background:#f0f8ff; }
+
+/* Contact */
+.contact-section { padding:50px; text-align:center; background:#e6f0ff; }
+
+/* Popup */
+.popup { display:none; position:fixed; z-index:999; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); }
+.popup-content { background:white; padding:20px; margin:15% auto; width:80%; max-width:400px; border-radius:10px; text-align:center; }
+#closeBtn { float:right; font-size:24px; cursor:pointer; }
+
+/* Responsive */
+@media (max-width:768px){
+  .hero { flex-direction:column; }
+  nav ul { flex-direction:column; margin-top:10px; }
+  nav ul li { margin-left:0; margin-bottom:10px; }
+  .services-container { flex-direction:column; }
+}
+

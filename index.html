@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunrise Hospital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Sunrise Hospital</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#book">Book Appointment</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Sunrise Hospital</h1>
+      <p>Your health is our priority. Book your appointment online easily.</p>
+      <button id="showFormBtn" class="btn">Book Now</button>
+    </div>
+    <div class="hero-image">
+      <img src="images/vecteezy_hospital-building-for-healthcare-background-vector_.jpg" alt="Hospital">
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="book" class="booking-section">
+    <h2>Book Your Appointment</h2>
+    <form id="appointmentForm" style="display:none;">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+
+      <label for="date">Date</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Time</label>
+      <select id="time" required>
+        <option value="">Select Time</option>
+        <option value="09:00">09:00 AM</option>
+        <option value="10:00">10:00 AM</option>
+        <option value="11:00">11:00 AM</option>
+        <option value="13:00">01:00 PM</option>
+        <option value="14:00">02:00 PM</option>
+        <option value="15:00">03:00 PM</option>
+      </select>
+
+      <button type="submit" class="btn">Book Appointment</button>
+    </form>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>Sunrise Hospital provides top-notch healthcare with experienced doctors and advanced technology. We prioritize patient comfort and efficient service.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <img src="images/heart-disease-treatment-2209.jpg" alt="Cardiology">
+        <h3>Cardiology</h3>
+        <p>Expert heart care with advanced diagnostics and treatments.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/pediatric_17774439.png" alt="Pediatrics">
+        <h3>Pediatrics</h3>
+        <p>Comprehensive care for children with experienced pediatricians.</p>
+      </div>
+      <div class="service-card">
+        <img src="images/depositphotos_636703750-stock-illustration-brain-vector-icon-modern-illustration.jpg" alt="Neurology">
+        <h3>Neurology</h3>
+        <p>Advanced neurological care with a dedicated team of specialists.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Email: contact@sunrisehospital.com</p>
+    <p>Phone: +1 (555) 123-4567</p>
+    <p>Address: 123 Main Street, Boston, MA</p>
+  </section>
+
+  <!-- Popup Modal -->
+  <div id="popupModal" class="popup">
+    <div class="popup-content">
+      <span id="closeBtn">&times;</span>
+      <p></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
