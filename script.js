@@ -1,3 +1,4 @@
+
 const appointmentForm = document.getElementById('appointmentForm');
 const showFormBtn = document.getElementById('showFormBtn');
 const popupModal = document.getElementById('popupModal');
@@ -102,5 +103,3 @@ appointmentForm.addEventListener('submit', async (e) => {
 
   appointmentForm.reset();
 });
-
-
